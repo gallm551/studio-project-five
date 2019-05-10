@@ -5,10 +5,29 @@ body {
     height: auto;
     background-color: #A8DADC;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none
     /* cursor: url('../images/musicnote.png'); */
 }
 
-#musixform { 
+.outsource {
+    width: 100vw;
+    text-decoration: none;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    
+}
+
+img {
+    padding: 5px;
+    padding-left: 10px; 
+    max-height: 90px;
+    max-width: 50px;
+    text-decoration: none;
+    float:right;
+}
+
+#musixform {
     margin-top: 10vh;
     left: 40vw;
     color: #E63946;
@@ -21,10 +40,13 @@ body {
 h6 {
     margin-top: 10%;
     margin-bottom: 5%;
+    color: #457B9D;
+    text-decoration: none;
 }
 
 input {
     color: #1a1a1a;
+    text-decoration: none;
 }
 
 .hidden {
@@ -34,6 +56,7 @@ input {
 #refresh {
     align-items: left;
 }
+
 #refresh:hover {
     cursor: pointer;
 }
@@ -71,7 +94,7 @@ input {
     background-color: transparent;
 }
 
-.result:hover{
+.result:hover {
     opacity: 0.5;
 }
 
