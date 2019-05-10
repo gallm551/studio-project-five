@@ -55,6 +55,9 @@ window.addEventListener('load', ()=> {
             return response.json();
         }).then(data => {
             console.log(data);
+            if(document.querySelector('.hidden')) {
+                document.querySelector('.hidden').classList = 'your-results';
+            }
 
             //This section tells what info to open up for the API!
             //Remember, the names & numbers refer to their corresponding values across the document. 
@@ -72,7 +75,7 @@ window.addEventListener('load', ()=> {
             let fifthtrackrating = fifthtrack.track_rating;
 
             let firsttrackalbum = firsttrack.album_coverart_100x100;
-            // let firsttrackalbum = 'http://api.musixmatch.com//images//albums//5//9//6//5//7//4//11475695.jpg';
+            //let firsttrackalbum = 'http://api.musixmatch.com//images//albums//5//9//6//5//7//4//11475695.jpg';
             let secondtrackalbum = secondtrack.album_coverart_100x100;
             let thirdtrackalbum = thirdtrack.album_coverart_100x100;
             let fourthtrackalbum = fourthtrack.album_coverart_100x100;
@@ -84,7 +87,7 @@ window.addEventListener('load', ()=> {
             //Remember, it must be defined with the variables from the top!
             //Also, the firsttrack /is a random name/. track_name /name of folder provided in the console log(data) thing/
             // First Search Query
-            dataWrapper1.innerHTML= " " + "1. " + firsttrack.track_name;
+            dataWrapper1.innerHTML= " " + " " + firsttrack.track_name;
             dataWrapper2.innerHTML= " " + " " + firsttrack.album_name;
             dataWrapper3.innerHTML= " " + " " + firsttrack.artist_name;
             if (firsttrackalbum) {
@@ -92,25 +95,25 @@ window.addEventListener('load', ()=> {
             }
             
             // Second Search Query
-            dataWrapper4.innerHTML= " " + "2. " + secondtrack.track_name;
+            dataWrapper4.innerHTML= " " + " " + secondtrack.track_name;
             dataWrapper5.innerHTML= " " + " " + secondtrack.album_name;
             dataWrapper6.innerHTML= " " + " " + secondtrack.artist_name;
             //dataWrapperA2.innerHTML= " " + " " + firsttrack.album_coverart_100x100;
             
             // Third Search Query
-            dataWrapper7.innerHTML= " " + "3. " + thirdtrack.track_name;
+            dataWrapper7.innerHTML= " " + " " + thirdtrack.track_name;
             dataWrapper8.innerHTML= " " + " " + thirdtrack.album_name;
             dataWrapper9.innerHTML= " " + " " + thirdtrack.artist_name;
             //dataWrapperA3.innerHTML= " " + " " + firsttrack.album_coverart_100x100;
             
             // Fourth Search Query
-            dataWrapper10.innerHTML= " " + "4. " + fourthtrack.track_name;
+            dataWrapper10.innerHTML= " " + " " + fourthtrack.track_name;
             dataWrapper11.innerHTML= " " + " " + fourthtrack.album_name;
             dataWrapper12.innerHTML= " " + " " + fourthtrack.artist_name;
             //dataWrapperA4.innerHTML= " " + " " + firsttrack.album_coverart_100x100;
             
             // Fifth
-            dataWrapper13.innerHTML= " " + "5. " + fifthtrack.track_name;
+            dataWrapper13.innerHTML= " " + " " + fifthtrack.track_name;
             dataWrapper14.innerHTML= " " + " " + fifthtrack.album_name;
             dataWrapper15.innerHTML= " " + " " + fifthtrack.artist_name;
             //dataWrapperA5.innerHTML= " " + " " + firsttrack.album_coverart_100x100;

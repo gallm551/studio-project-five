@@ -2,66 +2,83 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: #A8DADC;
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
+    /* cursor: url('../images/musicnote.png'); */
 }
 
 form { 
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 25vh;
+    left: 40vw;
     color: #E63946;
     font-size: 35px;
     display: inline-block;
+    text-align: center;
+    position: relative;
 }
-
-.headerbar, .your-results {
-    margin-top: 5%;
-    margin-left: 5%;
-    color: #457B9D;
-    font-size: 30px; 
-}
-
-.your-results {
-    display: grid;
-    grid-gap: 50px;
-    font-size: 20px;
-    color: #1D3557;
-}
-
-.songname1, .albumname1, .artistname1 {
-    display: inline-grid;
-}
-
-.songname2, .albumname2, .artistname2 {
-    display: inline-grid;
-}
-
-.songname3, .albumname3, .artistname3 {
-    display: inline-grid;
-}
-
-.songname4, .albumname4, .artistname4 {
-    display: inline-grid;
-}
-
-.songname5, .albumname5, .artistname5 {
-    display: inline-grid;
-}
-
-.Song, .Album, .Artist {
-    padding-left: 10%;
-    display: inline-block;
-}
-
 
 input {
     color: #1a1a1a;
 }
+
+.hidden {
+    display: none;
+}
+
 #refresh {
     align-items: left;
 }
 #refresh:hover {
     cursor: pointer;
 }
+
+.headerbar, .your-results {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90vw;
+    height: auto;
+    color: #A8DADC;
+    font-size: 25px;
+    text-align: center;
+    /* display: none; */
+}
+
+.Song, .Album, .Artist {
+    padding: 5px;
+    width: 25%;
+    background-color: #457B9D;
+    display: inline-block;
+    text-align: center;
+}
+
+.your-results {
+    margin-top: 2%;
+    background-color: aliceblue;
+    color: #A8DADC;
+    font-size: 20px;
+    text-align: left;
+    overflow: auto;
+}
+
+.result {
+    margin: 25px;
+    background-color: transparent;
+}
+
+.result:hover{
+    opacity: 0.5;
+}
+
+.songname, .albumname, .artistname {
+    margin: 10px;
+    margin-right: 20px;
+    color: #457B9D;
+    line-height: 30px;
+    display: inline;
+}
+
+.songname {
+    color: #E63946;
+}
+
