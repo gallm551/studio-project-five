@@ -8,14 +8,19 @@ body {
     /* cursor: url('../images/musicnote.png'); */
 }
 
-form { 
-    margin-top: 25vh;
+#musixform { 
+    margin-top: 10vh;
     left: 40vw;
     color: #E63946;
     font-size: 35px;
     display: inline-block;
     text-align: center;
     position: relative;
+}
+
+h6 {
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 input {
